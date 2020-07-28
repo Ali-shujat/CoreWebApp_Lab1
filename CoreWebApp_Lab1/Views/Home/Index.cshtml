@@ -55,10 +55,13 @@
 
 <div class="row">
     <div class="col-md-3">
-        <h2>Application uses</h2>
-        <ul>
-            <li>Sample pages using ASP.NET Core MVC</li>
-            <li>Theming using <a href="https://go.microsoft.com/fwlink/?LinkID=398939">Bootstrap</a></li>
+        <h2>Numbers List </h2>
+        <ul class="list-group">
+            @for(int i=0; i<=10; i++)
+            {
+                <li class="list-group-item">@i</li>
+            }
+            
         </ul>
     </div>
     <div class="col-md-3">
